@@ -38,7 +38,6 @@ const Home = () => {
   return (
     <SafeAreaView className="bg-primary h-full">
       <FlatList
-        // data={[]} // Replace with data from API}
         data={posts} // Replace with data from API}
         keyExtractor={(item) => item.$id}
         renderItem={({ item }) => <VideoCard video={item} />}
@@ -64,7 +63,7 @@ const Home = () => {
 
             <SearchInput
               placeholder="Search for any videos"
-              otherStyles={"h-12 rounded-full"}
+              // otherStyles={"h-12 rounded-full"}
             />
             <View className="w-full flex-1 pt-5 pb-8">
               <Text className="text-gray-100 text-lg font-pregular mb-5">
